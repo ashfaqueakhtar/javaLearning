@@ -1,18 +1,13 @@
-package com.learning.springboot.learning.data.entities;
+package com.learning.springboot.learning.data.dto.student;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-@Table(name = "students")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class StudentEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+public class StudentDTO {
     private long id;
     private String city;
     private String name;
